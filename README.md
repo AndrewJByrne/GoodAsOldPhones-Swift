@@ -1,3 +1,11 @@
 # GoodAsOldPhones-Swift
 
-#Adding images from Assets.xcassets manually
+# Jingles matter
+
+# Adding images from Assets.xcassets manually
+
+# So that's a segue
+
+# Real Estate issues
+
+# Commentary

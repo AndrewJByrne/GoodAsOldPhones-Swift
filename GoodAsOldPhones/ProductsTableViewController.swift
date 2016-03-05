@@ -24,4 +24,11 @@ class ProductsTableViewController: UITableViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowProduct" {
+            let productVC = segue.destinationViewController as? ProductViewController
+            productVC?.productName = "Really old phone"
+        }
+    }
+    
 }

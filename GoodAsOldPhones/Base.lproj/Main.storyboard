@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="o9Z-hF-anG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="64d-Z6-v14">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -20,12 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODR-l4-hcI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc9-K4-GPP">
-                                <rect key="frame" x="20" y="43" width="335" height="48"/>
-                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2d-DH-nNK">
                                 <rect key="frame" x="81" y="206" width="212" height="41"/>
                                 <state key="normal" image="button-addtocart"/>
@@ -33,9 +27,16 @@
                                     <action selector="addToCartPressed:" destination="11X-nS-YN8" eventType="touchUpInside" id="9uc-UL-tNG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc9-K4-GPP">
+                                <rect key="frame" x="20" y="72" width="335" height="48"/>
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wxe-c8-wWL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="productImageView" destination="ODR-l4-hcI" id="gRs-GA-Qud"/>
@@ -44,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuu-dp-304" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57.5" y="246.5"/>
+            <point key="canvasLocation" x="1427.5" y="268.5"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="DGh-rw-2ww">
@@ -134,7 +135,7 @@
                     </subviews>
                 </scrollView>
             </objects>
-            <point key="canvasLocation" x="485.5" y="196.5"/>
+            <point key="canvasLocation" x="455.5" y="-512.5"/>
         </scene>
         <!--Products Table View Controller-->
         <scene sceneID="oN1-9M-LRN">
@@ -145,13 +146,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="100" id="Sew-qq-0On">
-                                <rect key="frame" x="0.0" y="49.5" width="375" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="100" id="Sew-qq-0On">
+                                <rect key="frame" x="0.0" y="113.5" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sew-qq-0On" id="wBA-lm-ilu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="11X-nS-YN8" kind="push" identifier="ShowProduct" id="Gh4-XT-R2X"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -159,11 +163,30 @@
                             <outlet property="delegate" destination="o9Z-hF-anG" id="P04-WM-Ok1"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Ld4-kA-bqW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usT-E2-W71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.5" y="196.5"/>
+            <point key="canvasLocation" x="945.5" y="268.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kPa-e5-pUc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="64d-Z6-v14" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zah-9u-mdG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o9Z-hF-anG" kind="relationship" relationship="rootViewController" id="Jwr-wo-4At"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T57-FF-l8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="268"/>
         </scene>
     </scenes>
     <resources>

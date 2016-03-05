@@ -13,10 +13,12 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     
+    var productName: String? // Optional string - Any data that we don't know until the app runs, has to be marked as optional.
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        productNameLabel.text = "1937 Desk Phone"
+        productNameLabel.text = productName 
         productImageView.image  = UIImage(named: "phone-fullscreen3")
     }
     
