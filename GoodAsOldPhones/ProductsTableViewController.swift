@@ -48,18 +48,14 @@ class ProductsTableViewController: UITableViewController {
         if segue.identifier == "ShowProduct" {
             let productVC = segue.destinationViewController as? ProductViewController
             
-            // get the cell that was tapped
-            if let cell = sender as? UITableViewCell {
-                
-                // get the index path for that cell
-                if let indexPath = tableView.indexPathForCell(cell) {
-                    
-                    // use the index path to get the product name
-                    productVC?.productName = productNames?[indexPath.row]
-                }
-                
+            // guard checks to make sure these values exist and if they do it sets them to the cell and indexPath variables => if you get past this guard, you can safely use these variablles.
+            guard let cell = sender as? UITableViewCell,
+                let indexPath = tableView.indexPathForCell(cell) else {
+                    return
             }
             
+            // use the index path to get the product name
+            productVC?.productName = productNames?[indexPath.row]
         }
     }
     
