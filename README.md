@@ -45,10 +45,12 @@ It was interesting to manipulate the navigation scheme in the storyboard, but I 
 
 Again, not a complaint about the course at all - this is just a gripe based on my limited time using XCode, with the trackpad on my 12 inch MacBook. Jumping between windows, icons and window names are not intuitive to me (yet) and a few other quirks made my progress a little slower. That said, all can easily be remedied with practice! 
 
-
-
 # Gamification
 I really enjoyed the pace of the course, the fact that each "level" was short and that you gather points by completing challenges at the end of each level. Finally, beign able to easily tweet and add thsi new badge to my LinkedIn profile was also  :+1:
+
+# Next Steps
+* In this course I created a Contact/About page but in the final level the page isn't actually part of the app that the user can reach - I should fix that. 
+* I intend to watch [Soup to Bits: Try iOS & iOS Operation: Models](https://www.codeschool.com/screencasts/soup-to-bits-try-ios-ios-operation-models)
 
 # Acknowledgements
 
