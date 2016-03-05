@@ -1,5 +1,5 @@
 # GoodAsOldPhones-Swift
-![screenshot](readme-images/gig.goodasold.gif)
+![screenshot](./readme-images/gig.goodasold.gif)
 This repo captures the coding I did while following along with the [App Evolution with Swift](https://www.codeschool.com/courses/app-evolution-with-swift) course from @codeschool. 
 
 So, why start now with Swift? Well, this weekend was a Free Weekend on [Code School](https://www.codeschool.com) meaning anyone who had signed up with them could take any of their courses during a 48hr window. This is a fantastic way to 'try before you buy'. So, I took advantage and here I am, about 5 hours later reporting out on how the course went for me. Bottom line, I was able to follow along and build my very first iOS Swift app. 
