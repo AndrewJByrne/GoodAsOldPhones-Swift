@@ -17,6 +17,7 @@
 		0FE689921C8A758900B3FC4C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689911C8A758900B3FC4C /* ContactViewController.swift */; };
 		0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */; };
 		0FE689961C8A8EAE00B3FC4C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689951C8A8EAE00B3FC4C /* README.md */; };
+		0FE6899A1C8AD7BD00B3FC4C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689991C8AD7BD00B3FC4C /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0FE689911C8A758900B3FC4C /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		0FE689951C8A8EAE00B3FC4C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0FE689991C8AD7BD00B3FC4C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				0FE6898F1C8A6FAA00B3FC4C /* ProductViewController.swift */,
 				0FE689911C8A758900B3FC4C /* ContactViewController.swift */,
 				0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */,
+				0FE689991C8AD7BD00B3FC4C /* Product.swift */,
 			);
 			path = GoodAsOldPhones;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				0FE689961C8A8EAE00B3FC4C /* README.md in Sources */,
 				0FE689621C8A667200B3FC4C /* AppDelegate.swift in Sources */,
 				0FE689921C8A758900B3FC4C /* ContactViewController.swift in Sources */,
+				0FE6899A1C8AD7BD00B3FC4C /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
