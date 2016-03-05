@@ -47,7 +47,19 @@ class ProductsTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowProduct" {
             let productVC = segue.destinationViewController as? ProductViewController
-            productVC?.productName = "Really old phone"
+            
+            // get the cell that was tapped
+            if let cell = sender as? UITableViewCell {
+                
+                // get the index path for that cell
+                if let indexPath = tableView.indexPathForCell(cell) {
+                    
+                    // use the index path to get the product name
+                    productVC?.productName = productNames?[indexPath.row]
+                }
+                
+            }
+            
         }
     }
     
