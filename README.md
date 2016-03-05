@@ -1,4 +1,5 @@
 # GoodAsOldPhones-Swift
+![screenshot](readme-images/gig.goodasold.gif)
 This repo captures the coding I did while following along with the [App Evolution with Swift](https://www.codeschool.com/courses/app-evolution-with-swift) course from @codeschool. 
 
 So, why start now with Swift? Well, this weekend was a Free Weekend on [Code School](https://www.codeschool.com) meaning anyone who had signed up with them could take any of their courses during a 48hr window. This is a fantastic way to 'try before you buy'. So, I took advantage and here I am, about 5 hours later reporting out on how the course went for me. Bottom line, I was able to follow along and build my very first iOS Swift app. 
@@ -6,6 +7,19 @@ So, why start now with Swift? Well, this weekend was a Free Weekend on [Code Sch
 The purpose of this Readme is to just highlight a few observations from taking the course. Remember, I hadn't really created an iOS app, or coded in Swift, before this adventure. 
 
 All opinions are my own. [@AndrewJByrne](https://twitter.com/andrewjbyrne)
+
+# Learnings at 10,000 feet
+Building a simple app like GoodAsOldPhones was useful for highlighting some key concepts:
+* Getting started with the Single View Application template in XCode (mind you, we end up with 3 views)
+* MVC and the concepts of Views and Controllers
+* Using the various XCode editors to produce UI on the main Storyboard
+* Different types of ViewControllers
+* How to layout a table/list
+* Navigating between views using Segues
+* Optional variables and the use of the question mark
+* Optional binding
+* Use of the Guard statement and hwo it helps de-nest "if let" trees
+* Arrays and classes. 
 
 # Jingles matter :+1:
 First thing to observe was the production quality of the course. I was particulalry chuffed to here a very nice jingle and watch a nice cinematic transtion between each level of the course. Nice touch!
@@ -28,18 +42,7 @@ It was interesting to manipulate the navigation scheme in the storyboard, but I 
 
 Again, not a complaint about the course at all - this is just a gripe based on my limited time using XCode, with the trackpad on my 12 inch MacBook. Jumping between windows, icons and window names are not intuitive to me (yet) and a few other quirks made my progress a little slower. That said, all can easily be remedied with practice! 
 
-# Learnings at 10,000 feet
-Building a simple app like GoodAsOldPhones was useful for highlighting some key concepts:
-* Getting started with the Single View Application template in XCode (mind you, we end up with 3 views)
-* MVC and the concepts of Views and Controllers
-* Using the various XCode editors to produce UI on the main Storyboard
-* Different types of ViewControllers
-* How to layout a table/list
-* Navigating between views using Segues
-* Optional variables and the use of the question mark
-* Optional binding
-* Use of the Guard statement and hwo it helps de-nest "if let" trees
-* Arrays and classes. 
+
 
 # Gamification
 I really enjoyed the pace of the course, the fact that each "level" was short and that you gather points by completing challenges at the end of each level. Finally, beign able to easily tweet and add thsi new badge to my LinkedIn profile was also  :+1:
