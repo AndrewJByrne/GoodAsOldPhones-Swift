@@ -3,9 +3,11 @@ This repo captures the coding I did while following along with the [App Evolutio
 
 So, why start now with Swift? Well, this weekend was a Free Weekend on [Code School](https://www.codeschool.com) meaning anyone who had signed up with them could take any of their courses during a 48hr window. This is a fantastic way to 'try before you buy'. So, I took advantage and here I am, about 5 hours later reporting out on how the course went for me. Bottom line, I was able to follow along and build my very first iOS Swift app. 
 
-The purpose of this Readme is to just highlight a few observations from takign the course. Remember, I had never created an iOS app, or coded in Swift up until I took this course. All opinions are my own. 
+The purpose of this Readme is to just highlight a few observations from taking the course. Remember, I hadn't really created an iOS app, or coded in Swift, before this adventure. 
 
-# Jingles matter
+All opinions are my own. [@AndrewJByrne](https://twitter.com/andrewjbyrne)
+
+# Jingles matter :+1:
 First thing to observe was the production quality of the course. I was particulalry chuffed to here a very nice jingle and watch a nice cinematic transtion between each level of the course. Nice touch!
 
 # Adding images from Assets.xcassets manually
@@ -25,6 +27,6 @@ Some searching on Stack overflow led me to the conclusion that this was a known 
 
 # Acknowledgements
 
-Many thanks to @jonfriskics for hosting this course on @codeschool. The pace was perfect and Jon's voice and communication style is great to follow along to. You can also see Jon's full (original) code on [GitHub](https://github.com/codeschool/AppEvolutionWithSwiftDemo)
+Many thanks to [@jonfriskics](https://twitter.com/jonfriskics) for hosting this course on [@codeschool](https://twitter.com/codeschool). The pace was perfect and Jon's voice and communication style is great to follow along to. You can also see Jon's full (original) code on [GitHub](https://github.com/codeschool/AppEvolutionWithSwiftDemo)
 
 Thanks also to [Code School](https://www.codeschool.com) for hosting this Free Weekend! 
