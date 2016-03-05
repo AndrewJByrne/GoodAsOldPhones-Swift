@@ -16,6 +16,7 @@
 		0FE689901C8A6FAA00B3FC4C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6898F1C8A6FAA00B3FC4C /* ProductViewController.swift */; };
 		0FE689921C8A758900B3FC4C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689911C8A758900B3FC4C /* ContactViewController.swift */; };
 		0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */; };
+		0FE689961C8A8EAE00B3FC4C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689951C8A8EAE00B3FC4C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0FE6898F1C8A6FAA00B3FC4C /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		0FE689911C8A758900B3FC4C /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		0FE689951C8A8EAE00B3FC4C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		0FE689551C8A667100B3FC4C = {
 			isa = PBXGroup;
 			children = (
+				0FE689951C8A8EAE00B3FC4C /* README.md */,
 				0FE689601C8A667100B3FC4C /* GoodAsOldPhones */,
 				0FE689751C8A667200B3FC4C /* GoodAsOldPhonesTests */,
 				0FE689801C8A667200B3FC4C /* GoodAsOldPhonesUITests */,
@@ -264,6 +267,7 @@
 			files = (
 				0FE689901C8A6FAA00B3FC4C /* ProductViewController.swift in Sources */,
 				0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */,
+				0FE689961C8A8EAE00B3FC4C /* README.md in Sources */,
 				0FE689621C8A667200B3FC4C /* AppDelegate.swift in Sources */,
 				0FE689921C8A758900B3FC4C /* ContactViewController.swift in Sources */,
 			);
@@ -490,6 +494,7 @@
 				0FE689881C8A667200B3FC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FE689891C8A667200B3FC4C /* Build configuration list for PBXNativeTarget "GoodAsOldPhonesTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				0FE6898B1C8A667200B3FC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FE6898C1C8A667200B3FC4C /* Build configuration list for PBXNativeTarget "GoodAsOldPhonesUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				0FE6898E1C8A667200B3FC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
