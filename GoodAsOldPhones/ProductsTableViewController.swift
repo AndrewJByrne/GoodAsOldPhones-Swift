@@ -9,16 +9,36 @@
 import UIKit
 
 class ProductsTableViewController: UITableViewController {
+    
+    var productNames: [String]?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Set our array to have 4 values
+        productNames = ["1907 Wall Set", "1921 Dial Phone", "1937 Desk Set", "1984 Motorola Portable"]
+    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        
+        // Optional binding using 'if let' construct
+        if let pNames = productNames {
+            return pNames.count
+        }
+        
+        return 0
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "Hello friend."
+        let productName = productNames?[indexPath.row] // Set product name
+        
+        if let pName = productName {
+            cell.textLabel?.text = pName
+        }
+        
         cell.imageView?.image = UIImage(named: "image-cell1")
         return cell
         
