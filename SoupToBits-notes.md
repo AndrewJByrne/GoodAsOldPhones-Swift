@@ -5,6 +5,7 @@
 * Build and Run = CMD + R
 * Using an alert controller to pop up a message to the user
 * String Interpolation
+* Nil-coalescing operator
 
 
  New icons for tab bar found on [GitHub](https://github.com/codeschool/AppEvolutionWithSwiftDemo/tree/master/Image%20Files)
