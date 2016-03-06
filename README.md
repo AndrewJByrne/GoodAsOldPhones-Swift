@@ -1,5 +1,8 @@
 # GoodAsOldPhones-Swift
-![screenshot](./readme-images/gig.goodasold.gif)
+<p align="center">
+  <img src="readme-images/gif.goodasold.gif"/>
+</p>
+
 This repo captures the coding I did while following along with the [App Evolution with Swift](https://www.codeschool.com/courses/app-evolution-with-swift) course from @codeschool. 
 
 So, why start now with Swift? Well, this weekend was a Free Weekend on [Code School](https://www.codeschool.com) meaning anyone who had signed up with them could take any of their courses during a 48hr window. This is a fantastic way to 'try before you buy'. So, I took advantage and here I am, about 5 hours later reporting out on how the course went for me. Bottom line, I was able to follow along and build my very first iOS Swift app. 
@@ -42,10 +45,12 @@ It was interesting to manipulate the navigation scheme in the storyboard, but I 
 
 Again, not a complaint about the course at all - this is just a gripe based on my limited time using XCode, with the trackpad on my 12 inch MacBook. Jumping between windows, icons and window names are not intuitive to me (yet) and a few other quirks made my progress a little slower. That said, all can easily be remedied with practice! 
 
-
-
 # Gamification
 I really enjoyed the pace of the course, the fact that each "level" was short and that you gather points by completing challenges at the end of each level. Finally, beign able to easily tweet and add thsi new badge to my LinkedIn profile was also  :+1:
+
+# Next Steps
+* In this course I created a Contact/About page but in the final level the page isn't actually part of the app that the user can reach - I should fix that. 
+* I intend to watch [Soup to Bits: Try iOS & iOS Operation: Models](https://www.codeschool.com/screencasts/soup-to-bits-try-ios-ios-operation-models)
 
 # Acknowledgements
 
