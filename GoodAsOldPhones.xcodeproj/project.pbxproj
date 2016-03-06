@@ -18,6 +18,8 @@
 		0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */; };
 		0FE689961C8A8EAE00B3FC4C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689951C8A8EAE00B3FC4C /* README.md */; };
 		0FE6899A1C8AD7BD00B3FC4C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689991C8AD7BD00B3FC4C /* Product.swift */; };
+		0FE6899C1C8BAA5200B3FC4C /* SoupToBits-notes.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6899B1C8BAA5200B3FC4C /* SoupToBits-notes.md */; };
+		0FE6899E1C8BAB3300B3FC4C /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6899D1C8BAB3300B3FC4C /* CartTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		0FE689951C8A8EAE00B3FC4C /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
 		0FE689991C8AD7BD00B3FC4C /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0FE6899B1C8BAA5200B3FC4C /* SoupToBits-notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "SoupToBits-notes.md"; sourceTree = "<group>"; };
+		0FE6899D1C8BAB3300B3FC4C /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		0FE689551C8A667100B3FC4C = {
 			isa = PBXGroup;
 			children = (
+				0FE6899B1C8BAA5200B3FC4C /* SoupToBits-notes.md */,
 				0FE689951C8A8EAE00B3FC4C /* README.md */,
 				0FE689601C8A667100B3FC4C /* GoodAsOldPhones */,
 				0FE689751C8A667200B3FC4C /* GoodAsOldPhonesTests */,
@@ -115,6 +120,7 @@
 				0FE689911C8A758900B3FC4C /* ContactViewController.swift */,
 				0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */,
 				0FE689991C8AD7BD00B3FC4C /* Product.swift */,
+				0FE6899D1C8BAB3300B3FC4C /* CartTableViewController.swift */,
 			);
 			path = GoodAsOldPhones;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE6899C1C8BAA5200B3FC4C /* SoupToBits-notes.md in Sources */,
+				0FE6899E1C8BAB3300B3FC4C /* CartTableViewController.swift in Sources */,
 				0FE689901C8A6FAA00B3FC4C /* ProductViewController.swift in Sources */,
 				0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */,
 				0FE689961C8A8EAE00B3FC4C /* README.md in Sources */,
