@@ -30,11 +30,11 @@ class ProductViewController: UIViewController {
     
     @IBAction func addToCartPressed(sender: AnyObject) {
         
-        guard let product = product, let name = product.name else {
+        guard let product = product, let name = product.name, let price = product.price else {
             return
         }
         
-        let alertController = UIAlertController(title: "Added to Cart", message: "You added \(name) to the cart", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "Added to Cart", message: "You added \(name) to the cart and it costs \(price)", preferredStyle: UIAlertControllerStyle.Alert)
         
         // The Defautl actin style will dismiss the alert
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))

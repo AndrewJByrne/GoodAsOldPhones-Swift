@@ -3,7 +3,12 @@
 * Tab Bar Controller
 * Relationship Segue
 * Build and Run = CMD + R
+* Using an alert controller to pop up a message to the user
+* String Interpolation
 
 
  New icons for tab bar found on [GitHub](https://github.com/codeschool/AppEvolutionWithSwiftDemo/tree/master/Image%20Files)
+
+
+Swift has a cool feature called string interpolation which allows you to use a variable directly inside another string. Syntax is `\(Your variable goes here)`
 
