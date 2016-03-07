@@ -28,7 +28,7 @@ Building a simple app like GoodAsOldPhones was useful for highlighting some key 
 First thing to observe was the production quality of the course. I was particulalry chuffed to here a very nice jingle and watch a nice cinematic transtion between each level of the course. Nice touch!
 
 # Adding images from Assets.xcassets manually :thumbsdown:
-After a couple of levels, I decided to get this code checked into GitHub. It is, afterall, nice to look back and see the progression of the class from the perspective of the code I was writing. So, I created a local repo, then a remote repo and merged the two. great instructions can be found [here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+After a couple of levels, I decided to get this code checked into GitHub. It is, afterall, nice to look back and see the progression of the class from the perspective of the code I was writing. So, I created a local repo, then a remote repo and merged the two. Great instructions can be found [here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 
 Every now and then I decide to validate my repo creating by nuking everything local and then clonin the repo. If the code at that point doesn't load, compile or run as expected then the chances are that I missed soem files. Lo and behold - that's exactly what happened to the images I had added to the assets catalog in my project called `Assets.xcassets`. The images never made it to my remote repo! 
 
@@ -51,6 +51,7 @@ I really enjoyed the pace of the course, the fact that each "level" was short an
 # Next Steps
 * In this course I created a Contact/About page but in the final level the page isn't actually part of the app that the user can reach - I should fix that. 
 * I intend to watch [Soup to Bits: Try iOS & iOS Operation: Models](https://www.codeschool.com/screencasts/soup-to-bits-try-ios-ios-operation-models)
+[Update 3/62016: I have now complete the above video and the app has been updated as a result. You can see some very brief notes here](https://github.com/AndrewJByrne/GoodAsOldPhones-Swift/blob/master/SoupToBits-notes.md)
 
 # Acknowledgements
 
