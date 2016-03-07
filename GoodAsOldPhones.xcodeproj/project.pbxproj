@@ -16,9 +16,7 @@
 		0FE689901C8A6FAA00B3FC4C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6898F1C8A6FAA00B3FC4C /* ProductViewController.swift */; };
 		0FE689921C8A758900B3FC4C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689911C8A758900B3FC4C /* ContactViewController.swift */; };
 		0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689931C8A7F6A00B3FC4C /* ProductsTableViewController.swift */; };
-		0FE689961C8A8EAE00B3FC4C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689951C8A8EAE00B3FC4C /* README.md */; };
 		0FE6899A1C8AD7BD00B3FC4C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689991C8AD7BD00B3FC4C /* Product.swift */; };
-		0FE6899C1C8BAA5200B3FC4C /* SoupToBits-notes.md in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6899B1C8BAA5200B3FC4C /* SoupToBits-notes.md */; };
 		0FE6899E1C8BAB3300B3FC4C /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6899D1C8BAB3300B3FC4C /* CartTableViewController.swift */; };
 		0FE689A01C8BB46300B3FC4C /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE6899F1C8BB46300B3FC4C /* Orders.swift */; };
 		0FE689A21C8BB48600B3FC4C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE689A11C8BB48600B3FC4C /* Order.swift */; };
@@ -280,12 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FE6899C1C8BAA5200B3FC4C /* SoupToBits-notes.md in Sources */,
 				0FE6899E1C8BAB3300B3FC4C /* CartTableViewController.swift in Sources */,
 				0FE689A21C8BB48600B3FC4C /* Order.swift in Sources */,
 				0FE689901C8A6FAA00B3FC4C /* ProductViewController.swift in Sources */,
 				0FE689941C8A7F6A00B3FC4C /* ProductsTableViewController.swift in Sources */,
-				0FE689961C8A8EAE00B3FC4C /* README.md in Sources */,
 				0FE689621C8A667200B3FC4C /* AppDelegate.swift in Sources */,
 				0FE689A01C8BB46300B3FC4C /* Orders.swift in Sources */,
 				0FE689921C8A758900B3FC4C /* ContactViewController.swift in Sources */,
