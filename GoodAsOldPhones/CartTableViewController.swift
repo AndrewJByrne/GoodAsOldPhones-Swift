@@ -14,10 +14,12 @@ class CartTableViewController: UITableViewController {
         // Confirm
         let alertController = UIAlertController(title: "Empty Cart?", message: "Are you sure you want to empty the cart?", preferredStyle: UIAlertControllerStyle.Alert)
         
-        // The Defautl actin style will dismiss the alert
+        
+        // Use the Destructive style for the empty action
         alertController.addAction(UIAlertAction(title: "Empty", style: UIAlertActionStyle.Destructive, handler: { action in self.removeAllFromCart() }))
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
         
         presentViewController(alertController, animated: true, completion: nil)
         
@@ -66,14 +68,21 @@ class CartTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             
-            // Delete the row from the data source
-            ordersInCart.removeAtIndex(indexPath.row)
+            // Confirm
+            let alertController = UIAlertController(title: "Confirm Deletion", message: "Are you sure you want to delete this item?", preferredStyle: UIAlertControllerStyle.Alert)
             
-            // save array back to disk
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+            // Use the Destructive style for the empty action
+            alertController.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.Destructive, handler: { action in self.deleteFromCart(indexPath) }))
+            
+            
+            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {action in self.cancelEditing()}))
+            
+            presentViewController(alertController, animated: true, completion: nil)
+            
         }
         
-        updateTotal()   
+        
     }
     
     func updateTotal() {
@@ -91,6 +100,24 @@ class CartTableViewController: UITableViewController {
         Orders.saveOrdersToArchive(ordersInCart)
         updateTotal()
         tableView.reloadData()
+    }
+    
+    func deleteFromCart(indexPath: NSIndexPath) {
+        
+        // Delete the row from the data source
+        ordersInCart.removeAtIndex(indexPath.row)
+        
+        // save array back to disk
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        
+        Orders.saveOrdersToArchive(ordersInCart)
+        updateTotal()
+        tableView.reloadData()
+        
+    }
+    
+    func cancelEditing() {
+        tableView.setEditing(false, animated: true)
     }
     
 }
