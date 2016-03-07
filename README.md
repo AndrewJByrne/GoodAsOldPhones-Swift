@@ -21,7 +21,7 @@ Building a simple app like GoodAsOldPhones was useful for highlighting some key 
 * Navigating between views using Segues
 * Optional variables and the use of the question mark
 * Optional binding
-* Use of the Guard statement and hwo it helps de-nest "if let" trees
+* Use of the Guard statement and how it helps de-nest "if let" trees
 * Arrays and classes. 
 
 # Jingles matter :+1:
@@ -52,6 +52,8 @@ I really enjoyed the pace of the course, the fact that each "level" was short an
 * In this course I created a Contact/About page but in the final level the page isn't actually part of the app that the user can reach - I should fix that. 
 * I intend to watch [Soup to Bits: Try iOS & iOS Operation: Models](https://www.codeschool.com/screencasts/soup-to-bits-try-ios-ios-operation-models)
 [Update 3/62016: I have now complete the above video and the app has been updated as a result. You can see some very brief notes here](https://github.com/AndrewJByrne/GoodAsOldPhones-Swift/blob/master/SoupToBits-notes.md)
+
+From this point on, I will do all updates using issues, mapping each checkin to an issue. 
 
 # Acknowledgements
 
