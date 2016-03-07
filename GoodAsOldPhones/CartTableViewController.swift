@@ -40,8 +40,8 @@ class CartTableViewController: UITableViewController {
 
         let order = ordersInCart[indexPath.row]
         
-        cell.textLabel?.text = order.productName
-        cell.detailTextLabel?.text   = String(order.productPrice)
+        cell.textLabel?.text = order.productName ?? "unknown"
+        cell.detailTextLabel?.text   = String(order.productPrice) ?? "unknown"
 
         return cell
     }
