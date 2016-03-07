@@ -36,7 +36,8 @@ class ProductViewController: UIViewController {
         
         // create an order
         let order = Order()
-        order.product = product;
+        order.productName = name
+        order.productPrice = price
         
         var ordersInCart = Orders.readOrdersFromArchive()
         ordersInCart.append(order)

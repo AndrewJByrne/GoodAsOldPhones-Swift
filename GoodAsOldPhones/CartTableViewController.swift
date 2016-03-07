@@ -40,8 +40,8 @@ class CartTableViewController: UITableViewController {
 
         let order = ordersInCart[indexPath.row]
         
-        cell.textLabel?.text = order.product?.name
-        cell.detailTextLabel?.text   = String(order.product?.price)
+        cell.textLabel?.text = order.productName
+        cell.detailTextLabel?.text   = String(order.productPrice)
 
         return cell
     }
@@ -64,7 +64,7 @@ class CartTableViewController: UITableViewController {
     func updateTotal() {
         var total: Double = 0.0
         for order in ordersInCart {
-            if let price = order.product?.price {
+            if let price = order.productPrice {
                 total = total + price
             }
         totalLabel.text = String(total)
