@@ -43,12 +43,13 @@ class ProductViewController: UIViewController {
         
         // save this order to disk
         let success = Orders.saveOrdersToArchive(ordersInCart)
+        var alertController: UIAlertController
         if(success) {
-                
+            alertController = UIAlertController(title: "Added to Cart", message: "You added \(name) to the cart and it costs \(price)", preferredStyle: UIAlertControllerStyle.Alert)
         }
-            
-        
-        let alertController = UIAlertController(title: "Added to Cart", message: "You added \(name) to the cart and it costs \(price)", preferredStyle: UIAlertControllerStyle.Alert)
+        else {
+            alertController = UIAlertController(title: "Error", message: "Failed to add \(name) to the cart", preferredStyle: UIAlertControllerStyle.Alert)
+        }
         
         // The Defautl actin style will dismiss the alert
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
