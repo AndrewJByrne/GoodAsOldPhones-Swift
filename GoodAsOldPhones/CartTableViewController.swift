@@ -10,6 +10,21 @@ import UIKit
 
 class CartTableViewController: UITableViewController {
 
+    @IBAction func emptyCart(sender: AnyObject) {
+        // Confirm
+        let alertController = UIAlertController(title: "Empty Cart?", message: "Are you sure you want to empty the cart?", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // The Defautl actin style will dismiss the alert
+        alertController.addAction(UIAlertAction(title: "Empty", style: UIAlertActionStyle.Destructive, handler: { action in self.removeAllFromCart() }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
+        
+        presentViewController(alertController, animated: true, completion: nil)
+        
+    
+    }
+    
+    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var totalLabel: UILabel!
     var ordersInCart: [Order] = []
@@ -67,8 +82,15 @@ class CartTableViewController: UITableViewController {
             if let price = order.productPrice {
                 total = total + price
             }
-        totalLabel.text = String(total)
         }
+        totalLabel.text = String(total)
+    }
+    
+    func removeAllFromCart() {
+        ordersInCart.removeAll()
+        Orders.saveOrdersToArchive(ordersInCart)
+        updateTotal()
+        tableView.reloadData()
     }
     
 }

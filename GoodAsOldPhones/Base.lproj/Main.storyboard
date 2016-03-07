@@ -83,17 +83,24 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rld-K6-i0y">
-                            <rect key="frame" x="57" y="52" width="71" height="21"/>
+                            <rect key="frame" x="21" y="51" width="71" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.99751420454545459" green="0.99751420454545459" blue="0.99751420454545459" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculated Total Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBt-BB-o5M">
-                            <rect key="frame" x="180" y="52" width="177" height="21"/>
+                            <rect key="frame" x="74" y="51" width="177" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANz-PP-4kF">
+                            <rect key="frame" x="272" y="47" width="78" height="30"/>
+                            <state key="normal" title="Empty Cart"/>
+                            <connections>
+                                <action selector="emptyCart:" destination="eVm-Kw-W0p" eventType="touchUpInside" id="BsD-a9-vPy"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.2024345012626263" green="0.2024345012626263" blue="0.2024345012626263" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
