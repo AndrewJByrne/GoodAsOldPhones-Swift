@@ -112,7 +112,7 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANz-PP-4kF">
                             <rect key="frame" x="272" y="47" width="78" height="30"/>
-                            <state key="normal" title="Empty Cart"/>
+                            <state key="normal" title="Clear Cart"/>
                             <connections>
                                 <action selector="emptyCart:" destination="eVm-Kw-W0p" eventType="touchUpInside" id="BsD-a9-vPy"/>
                             </connections>
