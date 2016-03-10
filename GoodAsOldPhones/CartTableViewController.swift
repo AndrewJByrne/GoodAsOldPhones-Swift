@@ -45,7 +45,7 @@ class CartTableViewController: UITableViewController {
         if (ordersInCart.count == 0) {
             let alertController = UIAlertController(title: "Empty Cart", message: "You have no items in your cart", preferredStyle: UIAlertControllerStyle.Alert)
             
-            // The Defautl action style will dismiss the alert
+            // The Default action style will dismiss the alert
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             
             presentViewController(alertController, animated: true, completion: nil)

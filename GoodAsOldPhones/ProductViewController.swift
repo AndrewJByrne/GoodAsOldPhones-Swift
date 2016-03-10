@@ -52,7 +52,7 @@ class ProductViewController: UIViewController {
             alertController = UIAlertController(title: "Error", message: "Failed to add \(name) to the cart", preferredStyle: UIAlertControllerStyle.Alert)
         }
         
-        // The Defautl actin style will dismiss the alert
+        // The Default action style will dismiss the alert
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         
         presentViewController(alertController, animated: true, completion: nil)
