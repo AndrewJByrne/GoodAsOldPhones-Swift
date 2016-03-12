@@ -12,11 +12,11 @@ class CartTableViewController: UITableViewController {
 
     @IBAction func emptyCart(sender: AnyObject) {
         // Confirm
-        let alertController = UIAlertController(title: "Empty Cart?", message: "Are you sure you want to empty the cart?", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "Clear Cart?", message: "Are you sure you want to clear the cart?", preferredStyle: UIAlertControllerStyle.Alert)
         
         
         // Use the Destructive style for the empty action
-        alertController.addAction(UIAlertAction(title: "Empty", style: UIAlertActionStyle.Destructive, handler: { action in self.removeAllFromCart() }))
+        alertController.addAction(UIAlertAction(title: "Clear", style: UIAlertActionStyle.Destructive, handler: { action in self.removeAllFromCart() }))
         
         
         alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
@@ -69,7 +69,7 @@ class CartTableViewController: UITableViewController {
         
         cell.textLabel?.text = order.productName ?? "unknown"
         
-        // I don't like this guard. Code shoudl be refactored such that it is never possible to 
+        // I don't like this guard. Code should be refactored such that it is never possible to
         // have an order without a price (and a name)
         guard let price = order.productPrice else {
             cell.detailTextLabel?.text  = "unknown"
@@ -77,13 +77,10 @@ class CartTableViewController: UITableViewController {
         }
         cell.detailTextLabel?.text  = String(price)
         return cell
-        
-
-        
     }
 
 
-       // Override to support editing the table view.
+    // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             
