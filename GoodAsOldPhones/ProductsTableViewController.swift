@@ -43,6 +43,10 @@ class ProductsTableViewController: UITableViewController {
         
         // Set our array to have 4 values
         products = [product1, product2, product3, product4]
+        
+        let ordersInCart = Orders.readOrdersFromArchive()
+        updateCartBadge(ordersInCart.count)
+        
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -88,5 +92,19 @@ class ProductsTableViewController: UITableViewController {
             productVC?.product = products?[indexPath.row]
         }
     }
+    
+    func updateCartBadge(count: Int) {
+        
+        let tabItem = self.tabBarController?.tabBar.items![2]
+        
+        if (count > 0) {
+            tabItem?.badgeValue = "\(count)"
+        }
+        else {
+            tabItem?.badgeValue = nil
+        }
+    }
+
+    
     
 }

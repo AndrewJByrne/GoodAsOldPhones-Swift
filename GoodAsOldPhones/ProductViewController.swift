@@ -47,6 +47,9 @@ class ProductViewController: UIViewController {
         var alertController: UIAlertController
         if(success) {
             alertController = UIAlertController(title: "Added to Cart", message: "You added \(name) to the cart and it costs \(price)", preferredStyle: UIAlertControllerStyle.Alert)
+        
+            updateCartBadge(ordersInCart.count)
+            
         }
         else {
             alertController = UIAlertController(title: "Error", message: "Failed to add \(name) to the cart", preferredStyle: UIAlertControllerStyle.Alert)
@@ -56,6 +59,18 @@ class ProductViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         
         presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func updateCartBadge(count: Int) {
+        
+        let tabItem = self.tabBarController?.tabBar.items![2]
+        
+        if (count > 0) {
+            tabItem?.badgeValue = "\(count)"
+        }
+        else {
+            tabItem?.badgeValue = nil
+        }
     }
 
 }

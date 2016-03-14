@@ -111,6 +111,19 @@ class CartTableViewController: UITableViewController {
             }
         }
         totalLabel.text = String(total)
+        updateCartBadge(ordersInCart.count)
+    }
+    
+    func updateCartBadge(count: Int) {
+        
+        let tabItem = self.tabBarController?.tabBar.items![2]
+        
+        if (count > 0) {
+            tabItem?.badgeValue = "\(count)"
+        }
+        else {
+            tabItem?.badgeValue = nil
+        }
     }
     
     func removeAllFromCart() {
