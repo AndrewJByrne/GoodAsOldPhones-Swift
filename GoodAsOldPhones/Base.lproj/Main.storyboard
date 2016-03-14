@@ -89,6 +89,7 @@
                     <tabBarItem key="tabBarItem" title="Cart" image="icon-tabbar-cart" id="jmY-In-o2R"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="clearCartButton" destination="ANz-PP-4kF" id="xAQ-Uf-lfK"/>
                         <outlet property="headerView" destination="el5-0r-5cV" id="Brk-dr-ppB"/>
                         <outlet property="totalLabel" destination="yBt-BB-o5M" id="5Xa-2j-bzC"/>
                     </connections>

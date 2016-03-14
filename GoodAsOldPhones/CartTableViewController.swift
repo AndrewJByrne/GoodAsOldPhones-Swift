@@ -27,6 +27,7 @@ class CartTableViewController: UITableViewController {
     }
     
     
+    @IBOutlet weak var clearCartButton: UIButton!
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var totalLabel: UILabel!
     var ordersInCart: [Order] = []
@@ -42,19 +43,8 @@ class CartTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         ordersInCart = Orders.readOrdersFromArchive()
-        if (ordersInCart.count == 0) {
-            let alertController = UIAlertController(title: "Empty Cart", message: "You have no items in your cart", preferredStyle: UIAlertControllerStyle.Alert)
-            
-            // The Default action style will dismiss the alert
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            presentViewController(alertController, animated: true, completion: nil)
-            return
-        }
-        
         tableView.reloadData()
         updateTotal()
-        
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -103,9 +93,21 @@ class CartTableViewController: UITableViewController {
     
     func updateTotal() {
         var total: Double = 0.0
-        for order in ordersInCart {
-            if let price = order.productPrice {
-                total = total + price
+        if (ordersInCart.count == 0) {
+            let alertController = UIAlertController(title: "Empty Cart", message: "You have no items in your cart", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            // The Default action style will dismiss the alert
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            presentViewController(alertController, animated: true, completion: nil)
+            clearCartButton.enabled = false
+        }
+        else {
+            clearCartButton.enabled = true
+            for order in ordersInCart {
+                if let price = order.productPrice {
+                    total = total + price
+                }
             }
         }
         totalLabel.text = String(total)
@@ -115,6 +117,7 @@ class CartTableViewController: UITableViewController {
         ordersInCart.removeAll()
         Orders.saveOrdersToArchive(ordersInCart)
         updateTotal()
+        clearCartButton.enabled = false
         tableView.reloadData()
     }
     
