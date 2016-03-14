@@ -6,7 +6,7 @@
 	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleExecutable</key>
+		<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
@@ -38,5 +38,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <!-- Static home quick actions
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <key>UIApplicationShortcutItemIconType</key>
+            <string>UIApplicationShortcutIconTypeLove</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>Cart</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>andrewjbyrne.goodasoldphones.appshortcut.cart-summary</string>
+        </dict>
+    </array>
+    -->
 </dict>
 </plist>

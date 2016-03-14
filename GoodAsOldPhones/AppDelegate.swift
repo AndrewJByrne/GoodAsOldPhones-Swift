@@ -15,8 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        
+        var launchedFromShortCut = false
+        
+        initCartAction()
+        
+        //Check for ShortCutItem
+        if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsShortcutItemKey] as? UIApplicationShortcutItem
+        {
+            launchedFromShortCut = true
+            self.handleShortCutItem(shortcutItem)
+        }
+        
+        return !launchedFromShortCut
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -27,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        // I may have updated the cart surign this session, so update the Cart Info action
+        initCartAction()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -39,6 +53,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+        
+        print("Shortcut tapped")
+        completionHandler(handleShortCutItem(shortcutItem) )
+        
+    }
+    
+    func handleShortCutItem( shortcutItem:UIApplicationShortcutItem ) -> Bool {
+        print("Handling shortcut")
+        
+        var succeeded = false
+        
+        if( shortcutItem.type == "andrewjbyrne.goodasoldphones.cart-info" ) {
+            
+            // I'm not doing much here right now. I coudl launch a particular view controller
+            // or perform another action. For the moment, let's just print the type of shortcut item
+            print("- Handling \(shortcutItem.type)")
+            
+            succeeded = true
+            
+        }
+        
+        return succeeded
+        
+    }
+    
+    func initCartAction() {
+        UIApplication.sharedApplication().shortcutItems?.removeAll()
+        
+        let ordersInCart = Orders.readOrdersFromArchive()
+        
+        var info: String
+        
+        if (ordersInCart.count == 0) {
+            info = "cart is empty"
+        }
+        else {
+            var total: Double = 0.0
+            for order in ordersInCart {
+                total = total + order.productPrice
+            }
+            
+            info = "Orders: \(ordersInCart.count) Total:$\(total)"
+        }
+        
+        /* Using an icon from the UIApplicationShortcutItemType enum found
+        at https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationShortcutIcon_Class/index.html#//apple_ref/c/tdef/UIApplicationShortcutIconType
+        */
+        
+        let shortcutItem = UIApplicationShortcutItem(type: "andrewjbyrne.goodasoldphones.cart-info", localizedTitle: "Cart Info", localizedSubtitle: info, icon: UIApplicationShortcutIcon(type: .Love), userInfo: nil)
+        
+        
+        UIApplication.sharedApplication().shortcutItems = [shortcutItem]
+        
+
+        
     }
 
 
