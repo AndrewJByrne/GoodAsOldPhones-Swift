@@ -57,15 +57,8 @@ class CartTableViewController: UITableViewController {
 
         let order = ordersInCart[indexPath.row]
         
-        cell.textLabel?.text = order.productName ?? "unknown"
-        
-        // I don't like this guard. Code should be refactored such that it is never possible to
-        // have an order without a price (and a name)
-        guard let price = order.productPrice else {
-            cell.detailTextLabel?.text  = "unknown"
-            return cell
-        }
-        cell.detailTextLabel?.text  = String(price)
+        cell.textLabel?.text = order.productName
+        cell.detailTextLabel?.text  = String(order.productPrice)
         return cell
     }
 
@@ -105,9 +98,7 @@ class CartTableViewController: UITableViewController {
         else {
             clearCartButton.enabled = true
             for order in ordersInCart {
-                if let price = order.productPrice {
-                    total = total + price
-                }
+                total = total + order.productPrice
             }
         }
         totalLabel.text = String(total)
